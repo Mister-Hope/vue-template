@@ -6,7 +6,11 @@
 [![Travis Ci](https://img.shields.io/travis/com/Mister-Hope/vue-template/master?style=flat-square&logo=travis-ci)](https://travis-ci.com/Mister-Hope/vue-template)
 [![Netlify Status](https://img.shields.io/netlify/f900457b-a946-4874-9fc9-ddf41395417c?style=flat-square&logo=netlify)](https://app.netlify.com/sites/vue2-ts/deploys)
 
-该项目为 Typescript 版 Vue 项目模板，使用 Node.js，基于 Vue 框架制作。→ [点击前往](https://vuets.nenuyouth.com) | [备用地址](https://vue2-ts.netlify.com/)
+该项目为 Typescript 版 Vue 项目模板，同时添加了 vue router 和 vuex。
+
+该项目使用 Node.js，基于 Vue 框架制作。
+
+[→ 点击前往](https://vuets.nenuyouth.com) | [备用地址](https://vue2-ts.netlify.com/)
 
 ## 组件介绍与使用手册
 
@@ -19,13 +23,13 @@
 - |：`src/assets`
 - %：`src/utils`
 
-## Linter配置
+## Linter 配置
 
 项目已有自己的一套项目风格预设。
 
 启动项目之后，请严格按照Linter提示格式化代码。项目不应包含任何无法通过Linter配置检查的代码。
 
-## Node.js库使用
+## Node.js 库使用
 
 ### 项目使用库
 
@@ -42,7 +46,7 @@
 
 #### 第三方库
 
-- axios(基于promise的html访问功能)
+- axios(基于 promise 的 html 访问功能)
   > 在本demo中未使用
 - register-service-worker
 - vue-wechat-title(设置网页标题)
@@ -53,29 +57,23 @@
 - Vue
 - Vuex
 - Vue-Router
-- Viewerjs
-- Tinycolor2
-- Axios
-  > 在本demo中未使用
-- jQuery
-  > 在本demo中未使用
 
 ### 开发依赖
 
-#### Vue-cli相关
+#### Vue-cli 插件
 
-- @vue/cli-plugin-babel
-- @vue/cli-plugin-pwa
-- @vue/cli-service
-
-#### 代码打包相关
-
-- babel-plugin-import
-- fibers
+- babel
+- e2e-cypress
+- eslint
+- pwa
+- router
+- typescript
+- unit-mocha
+- vuex
 
 #### 开发语言相关
 
-- vue-template-compiler(vue单文件编译器)
+- vue-template-compiler (vue单文件编译器)
 - sass
 - sass-loader
 - typescript
@@ -88,7 +86,6 @@
 - @vue/cli-plugin-eslint
 - @vue/eslint-config-airbnb
 - @vue/eslint-config-typescript
-- @vue/cli-plugin-typescript
 
 ## 初始化项目
 
