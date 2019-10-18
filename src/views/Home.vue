@@ -2,12 +2,12 @@
  * @Author: Mr.Hope
  * @Date: 2019-06-13 21:32:08
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-10-18 16:01:30
+ * @LastEditTime: 2019-10-18 16:52:22
  * @Description: 主页
 -->
 <template>
   <div class="home">
-    <img alt="Vue logo" src="~@/assets/logo.png" />
+    <img alt="Vue logo" src="~|/logo.png" />
     <HelloWorld msg="欢迎来到你的Vue with TS APP" />
   </div>
 </template>

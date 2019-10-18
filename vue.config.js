@@ -1,4 +1,78 @@
 
+const path = require('path');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+
+// 判断环境
+const isProduction = process.env.NODE_ENV === 'production';
+
+/**
+ * @description: Webpack配置
+ * @param {object} config Webpack配置
+ * @returns {void}
+ */
+const configureWebpack = config => {
+  const myaliasconfig = {
+    '|': path.resolve(__dirname, 'src/assets/'),
+    '#': path.resolve(__dirname, 'src/components/'),
+    '%': path.resolve(__dirname, 'src/utils/')
+  };
+
+  config.resolve.alias = { ...config.resolve.alias || {}, ...myaliasconfig }; // 配置解析别名，可以简写
+  config.resolve.modules = [path.resolve(__dirname, 'src'), 'node_modules']; // 配置模块解析方式，可加快解析速度
+
+  // 生产环境配置
+  if (isProduction) {
+    // 使用CDN外部引入组件
+    config.externals = {
+      vue: 'Vue',
+      'vue-router': 'VueRouter',
+      vuex: 'Vuex'
+    };
+
+    // 提出性能要求
+    config.performance = {
+      hints: 'warning',
+      maxEntrypointSize: 1048576,
+      maxAssetSize: 1048576
+    };
+
+    config.optimization = {
+      // 为 webpack 运行时代码创建单独的chunk
+      runtimeChunk: { name: 'manifest' },
+      // chunk分离设置
+      splitChunks: {
+        chunks: 'async',
+        minSize: 30000,
+        maxSize: 0,
+        minChunks: 1,
+        maxAsyncRequests: 10,
+        maxInitialRequests: 5,
+        automaticNameDelimiter: '-',
+        name: true,
+        cacheGroups: {
+          vendors: {
+            test: /[\\/]node_modules[\\/]/u,
+            priority: -10
+          },
+          combine: { // 默认块，最小重用两次，优先级最低，不包含已有的chunk内容
+            minChunks: 2,
+            priority: -20,
+
+            // if the chunk contains modules already split out , will be reused
+            reuseExistingChunk: true
+          }
+        }
+      }
+    };
+  } else config.devtool = 'source-map';
+
+  if (process.env.ANALYZE) // 分析打包后代码
+    config.plugins.push(new BundleAnalyzerPlugin({ // 使用 webpack 分析插件
+      analyzerPort: 0, // 让 node 使用随机端口
+      defaultSizes: 'gzip' // 默认展示 gzip 大小
+    }));
+};
+
 /**
  * @description: vue输出配置
  *
@@ -20,8 +94,7 @@ module.exports = {
   publicPath: process.env.DeployAddress || '/',
   productionSourceMap: false,
   crossorigin: 'anonymous',
-  // chainWebpack,
-  // configureWebpack,
+  configureWebpack,
   devServer: {
     compress: true, // 启用gzip压缩
     overlay: { // 浮层
@@ -60,13 +133,13 @@ module.exports = {
         {
           src: '/img/icons/chrome-192.png',
           sizes: '192x192',
-          type: 'image/png',
+          type: 'image/png'
         },
         {
           src: '/img/icons/chrome-512.png',
           sizes: '512x512',
-          type: 'image/png',
-        },
+          type: 'image/png'
+        }
       ],
       start_url: './index.html',
       display: 'standalone',
