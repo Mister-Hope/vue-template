@@ -5,12 +5,7 @@ install:
   - npm ci
 jobs:
   include:
-    # 测试开发服务器
-    - stage: test-dev
-      name: "Test Dev Process"
-      script: npm run serve
-
-    # 部署 work 分支
+    # 测试构建项目
     - stage: test-build
       name: "Test Build Process"
       script: npm run build
@@ -29,7 +24,5 @@ jobs:
 stages:
   - name: Process
     if: branch = master
-  - name: test-dev
-    if: branch != master
   - name: test-build
     if: branch != master
