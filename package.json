@@ -4,7 +4,14 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --modern",
+    "rebuild": "vue-cli-service build --modern --no-clean",
+    "analyze": "vue-cli-service build --mode analyze --modern",
+    "inspect": "vue-cli-service inspect --modern > modern.js",
+    "normal-analyze": "vue-cli-service build --mode analyze",
+    "normal-build": "vue-cli-service build",
+    "normal-inspect": "vue-cli-service inspect > normal.js",
+    "normal-rebuild": "vue-cli-service build --modern --no-clean",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
