@@ -22,7 +22,7 @@ jobs:
         github-token: $Github_Token
 
 stages:
-  - name: Process
-    if: branch = master
   - name: test-build
     if: branch != master
+  - name: deploy
+    if: branch = master
