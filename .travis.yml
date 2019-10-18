@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - lts/*
+install:
+  - npm ci
+jobs:
+  include:
+    # 测试构建项目
+    - stage: test-build
+      name: "Test Build Process"
+      script: npm run build
+
+    # 部署 master 分支
+    - stage: deploy
+      name: "Deploy Demo"
+      script: npm run build
+      before_deploy: echo vue-demo.mrhope.site >> dist/CNAME
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        local_dir: dist
+        github-token: $Github_Token
+
+stages:
+  - name: test-build
+    if: branch != master
+  - name: deploy
+    if: branch = master

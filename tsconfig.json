@@ -19,6 +19,15 @@
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "|/*": [
+        "src/assets/*"
+      ],
+      "#/*": [
+        "src/components/*"
+      ],
+      "%/*": [
+        "src/utils/*"
       ]
     },
     "lib": [
@@ -36,6 +45,7 @@
     "tests/**/*.tsx"
   ],
   "exclude": [
+    "dist",
     "node_modules"
   ]
 }
