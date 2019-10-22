@@ -18,7 +18,7 @@
   },
   "author": "Mr.Hope",
   "dependencies": {
-    "core-js": "^3.3.2",
+    "core-js": "^3.3.3",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-class-component": "^7.1.0",
@@ -46,7 +46,7 @@
     "eslint-plugin-vue": "^5.2.3",
     "sass": "^1.23.0",
     "sass-loader": "^8.0.0",
-    "typescript": "~3.5.3",
+    "typescript": "^3.6.4",
     "vue-template-compiler": "^2.6.10",
     "webpack-bundle-analyzer": "^3.6.0"
   }

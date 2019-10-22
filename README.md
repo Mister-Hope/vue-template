@@ -1,7 +1,7 @@
 # Vue2 + Typescript + Vue Cli 4 + Vue Router + Vuex Template
 
 [![作者：Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg?style=for-the-badge)](https://mrhope.site)
-[![License](https://img.shields.io/github/license/mister-hope/blog?style=for-the-badge)](https://github.com/Mister-Hope/vue-template/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/mister-hope/vue-template?style=for-the-badge)](https://github.com/Mister-Hope/vue-template/blob/master/LICENSE)
 
 [![Travis Ci](https://img.shields.io/travis/com/Mister-Hope/vue-template/master?style=flat-square&logo=travis-ci)](https://travis-ci.com/Mister-Hope/vue-template)
 [![Netlify Status](https://img.shields.io/netlify/f900457b-a946-4874-9fc9-ddf41395417c?style=flat-square&logo=netlify)](https://app.netlify.com/sites/vue2-ts/deploys)
