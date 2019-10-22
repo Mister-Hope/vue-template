@@ -1,0 +1,39 @@
+root: true
+
+env:
+  node: true
+  es6: true
+
+extends:
+  - "plugin:vue/essential"
+  - "eslint:all"
+  - "@vue/prettier"
+  - "@vue/typescript"
+
+parserOptions:
+  parser: "@typescript-eslint/parser"
+
+rules:
+  no-console: "off"
+  no-debugger: "off"
+  arrow-parens:
+    - error
+    - as-needed
+  comma-dangle:
+    - error
+    - never
+  curly:
+    - error
+    - multi
+  nonblock-statement-body-position:
+    - error
+    - any
+  no-param-reassign:
+    - error
+    - props: false
+
+overrides:
+  - files:
+      - "**/__tests__/*.{j,t}s?(x)"
+    env:
+      mocha: true

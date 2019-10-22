@@ -1,4 +1,3 @@
-
 const path = require('path');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
@@ -17,7 +16,7 @@ const configureWebpack = config => {
     '%': path.resolve(__dirname, 'src/utils/')
   };
 
-  config.resolve.alias = { ...config.resolve.alias || {}, ...myaliasconfig }; // 配置解析别名，可以简写
+  config.resolve.alias = { ...(config.resolve.alias || {}), ...myaliasconfig }; // 配置解析别名，可以简写
   config.resolve.modules = [path.resolve(__dirname, 'src'), 'node_modules']; // 配置模块解析方式，可加快解析速度
 
   // 生产环境配置
@@ -54,7 +53,9 @@ const configureWebpack = config => {
             test: /[\\/]node_modules[\\/]/u,
             priority: -10
           },
-          combine: { // 默认块，最小重用两次，优先级最低，不包含已有的chunk内容
+
+          // 默认块，最小重用两次，优先级最低，不包含已有的chunk内容
+          combine: {
             minChunks: 2,
             priority: -20,
 
@@ -66,11 +67,15 @@ const configureWebpack = config => {
     };
   } else config.devtool = 'source-map';
 
-  if (process.env.ANALYZE) // 分析打包后代码
-    config.plugins.push(new BundleAnalyzerPlugin({ // 使用 webpack 分析插件
-      analyzerPort: 0, // 让 node 使用随机端口
-      defaultSizes: 'gzip' // 默认展示 gzip 大小
-    }));
+  // 分析打包后代码
+  if (process.env.ANALYZE)
+    config.plugins.push(
+      // 使用 webpack 分析插件
+      new BundleAnalyzerPlugin({
+        analyzerPort: 0, // 让 node 使用随机端口
+        defaultSizes: 'gzip' // 默认展示 gzip 大小
+      })
+    );
 };
 
 /**
@@ -97,7 +102,8 @@ module.exports = {
   configureWebpack,
   devServer: {
     compress: true, // 启用gzip压缩
-    overlay: { // 浮层
+    // 浮层
+    overlay: {
       warnings: false,
       errors: true
     },
@@ -109,7 +115,8 @@ module.exports = {
     msTileColor: '#42b983', // 微软磁贴颜色
     appleMobileWebAppCapable: 'yes', // iOS启用SW
     appleMobileWebAppStatusBarStyle: 'default', // iOS状态栏样式,可选"black-translucent","black","default"
-    iconPaths: { // 图标路径
+    // 图标路径
+    iconPaths: {
       favicon32: 'img/icons/favicon-32.png',
       favicon16: 'img/icons/favicon-16.png',
       appleTouchIcon: 'img/icons/apple-icon-152.png',
@@ -125,7 +132,8 @@ module.exports = {
       importsDirectory: 'service-worker', // service-worker文件存放路径
       maximumFileSizeToCacheInBytes: '10485760'
     },
-    manifestOptions: { // 定义 manifest.json
+    // 定义 manifest.json
+    manifestOptions: {
       name: 'vuets',
       short_name: 'vuets',
       description: 'vue + ts + router + vuex 项目模板',

@@ -8,7 +8,6 @@
 import { BaseState } from './state';
 
 const myMutation = {
-
   /**
    * @description: 设置当前路径
    *
