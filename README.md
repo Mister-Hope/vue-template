@@ -14,7 +14,7 @@
 
 ## 组件介绍与使用手册
 
-可查看[自定义组件文档](https://mrhope.site/code/vue/component.html)。
+可查看 [自定义组件文档](https://mrhope.site/code/vue/component.html)。
 
 ## 别名设置
 
@@ -25,9 +25,9 @@
 
 ## Linter 配置
 
-项目已有自己的一套项目风格预设。
+项目已配置一套风格预设。
 
-启动项目之后，请严格按照Linter提示格式化代码。项目不应包含任何无法通过Linter配置检查的代码。
+启动项目之后，请严格按照 Linter 提示格式化代码。项目不应包含任何无法通过 Linter 配置检查的代码。
 
 ## Node.js 库使用
 
@@ -46,13 +46,13 @@
 
 #### 第三方库
 
-- axios(基于 promise 的 html 访问功能)
+- axios (基于 promise 的 html 访问功能)
   > 在本demo中未使用
 - register-service-worker
-- vue-wechat-title(设置网页标题)
+- vue-wechat-title (设置网页标题)
   > 在本demo中未使用
 
-#### CDN引入
+#### CDN 引入
 
 - Vue
 - Vuex
@@ -73,7 +73,7 @@
 
 #### 开发语言相关
 
-- vue-template-compiler (vue单文件编译器)
+- vue-template-compiler (vue 单文件编译器)
 - sass
 - sass-loader
 - typescript
@@ -99,33 +99,27 @@ npm install
 npm update
 ```
 
-或
-
-```bash
-npm install
-```
-
 ### 启动开发环境
 
 ```bash
 npm run serve
 ```
 
-> 运行开发环境，可在浏览器通过[http://localhost:8080](http://localhost:8080)直接访问。
-> 使用`ctrl + c`组合键并输入`y`再回车来终止开发环境
+> 运行开发环境，可在浏览器通过 [http://localhost:8080](http://localhost:8080) 直接访问。
+> 使用 `ctrl + c` 组合键并输入 `y` 与 `enter` 来终止开发环境
 
 ### 构建生产环境
 
-- 构建现代输出（ES5标准支持，有fallback）
+- 构建现代输出(ES5 标准支持，有 fallback)
 
 ```bash
 npm run build
 ```
 
-- 构建常规输出（ES5标准支持，有fallback）
+- 构建常规输出(ES5 标准支持，有 fallback)
 
 ```bash
-npm run normBuild
+npm run normal-build
 ```
 
 > 执行构建，将构建成功的网页输出至/dist目录
@@ -135,18 +129,10 @@ npm run rebuild
 ```
 
 ```bash
-npm run normRebuild
+npm run normal-rebuild
 ```
 
-> 重新构建（现代 | 常规），不清空输出目录原内容
-
-### 部署网站
-
-```bash
-start deploy.bat
-```
-
-> 执行构建，将构建成功的网站推送到Github Pages与Gitee Pages
+> 重新构建(现代 | 常规)，不清空输出目录原内容
 
 #### 执行文件提示和文件修复
 
@@ -158,15 +144,15 @@ npm run lint
 
 - 分析现代构建打包
 
-```bash
-npm run analyze
-```
+  ```bash
+  npm run analyze
+  ```
 
 - 分析普通构建打包
 
-```bash
-npm run normAnal
-```
+  ```bash
+  npm run normal-analyze
+  ```
 
 #### 查看浏览器支持
 
@@ -174,31 +160,27 @@ npm run normAnal
 npm run browser
 ```
 
-#### 输出Webpack模式打包配置
+#### 输出 Webpack 模式打包配置
 
-- 输出现代构建打包配置至当前目录的moderm.js
+- 输出现代构建打包配置至当前目录的 moderm.js
 
-```bash
-npm run inspect
-```
+  ```bash
+  npm run inspect
+  ```
 
-- 输出普通构建打包配置至当前目录的normal.js
+- 输出普通构建打包配置至当前目录的 normal.js
 
-```bash
-npm run normInspect
-```
+  ```bash
+  npm run normal-inspect
+  ```
 
 #### 执行测试
 
-端对端测试
-
 ```bash
+# e2e test
 npm run e2e
-```
 
-单元测试
-
-```bash
+# unit test
 npm run unit
 ```
 
