@@ -3,7 +3,7 @@
  * @LastEditors: Mr.Hope
  * @Description: register-service-worker配置文件
  * @Date: 2019-02-27 00:00:08
- * @LastEditTime: 2019-10-18 16:16:31
+ * @LastEditTime: 2019-11-19 23:57:55
  */
 
 /* eslint-disable no-console */
@@ -14,7 +14,7 @@ import { BaseState } from '@/store/state';
 
 const registerServiceWorker = (store: Store<BaseState>) => {
   if (process.env.NODE_ENV === 'production')
-    register(`${process.env.BASE_URL}service-worker/service-worker.js`, {
+    register(`${process.env.BASE_URL}service-worker.js`, {
       ready() {
         store.commit('swState', 'ready');
         console.log('APP已被service worker接管缓存');
