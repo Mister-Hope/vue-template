@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-06-13 21:32:08
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-11-19 23:51:25
+ * @LastEditTime: 2019-11-20 00:04:48
  * @Description: 主脚本文件
  */
 import Vue from 'vue';
@@ -13,7 +13,7 @@ import router from './router';
 import store from './store';
 
 // 引入Service-Worker
-import registerSW from './service-worker/registerSW';
+import registerSW from './registerSW';
 
 // 注册service worker
 registerSW(store);
