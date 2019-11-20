@@ -1,3 +1,4 @@
+os: linux
 language: node_js
 node_js:
   - lts/*
@@ -14,12 +15,15 @@ jobs:
     - stage: deploy
       name: "Deploy Demo"
       script: yarn run build
-      before_deploy: echo vue-demo.mrhope.site >> dist/CNAME
       deploy:
         provider: pages
-        skip-cleanup: true
         local_dir: dist
-        github-token: $Github_Token
+        token: $Github_Token
+        fqdn: vue-demo.mrhope.site
+        cleanup: false
+        project_name: vue-demo
+        committer_from_gh: true
+        edge: true
 
 stages:
   - name: test-build
