@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      如果需要一份指南，或想要了解如何编写/自定义这个APP
+      如果需要一份指南，或想要了解如何编写 / 自定义这个APP
       <br />请访问
       <a href="https://cli.vuejs.org/zh/" rel="noopener" target="_blank">vue-cli 文档</a>.
     </p>
