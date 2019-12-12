@@ -88,6 +88,9 @@ rules:
     - warn
     - 25
 
+  multiline-comment-style:
+    - warn
+
   new-cap:
     - off
 
