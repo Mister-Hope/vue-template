@@ -56,9 +56,11 @@ const configureWebpack = config => {
   if (isProduction) {
     // 使用CDN外部引入组件
     config.externals = {
-      vue: 'Vue',
-      'vue-router': 'VueRouter'
-      // vuex: 'Vuex'
+      /*
+       * vue: 'Vue',
+       * 'vue-router': 'VueRouter'
+       * vuex: 'Vuex'
+       */
     };
 
     // 提出性能要求
