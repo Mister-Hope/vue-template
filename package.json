@@ -56,7 +56,7 @@
     "@types/mocha": "5.2.7",
     "conventional-changelog-cli": "2.0.31",
     "cz-conventional-changelog": "3.0.2",
-    "husky": "4.0.3",
+    "husky": "4.0.4",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
     "webpack-bundle-analyzer": "3.6.0"
