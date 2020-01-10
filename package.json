@@ -42,7 +42,7 @@
     "eslint-plugin-vue": "6.1.2",
     "register-service-worker": "1.6.2",
     "sass": "1.24.4",
-    "sass-loader": "8.0.0",
+    "sass-loader": "8.0.1",
     "typescript": "3.7.4",
     "vue": "2.6.11",
     "vue-class-component": "7.1.0",
