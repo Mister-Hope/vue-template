@@ -15,7 +15,7 @@ importScripts("/service-worker/workbox-v4.3.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/service-worker/workbox-v4.3.1"});
 
 importScripts(
-  "/service-worker/precache-manifest.e87933b6ed32dcdca0d25436a3073815.js"
+  "/service-worker/precache-manifest.240d8721b4d04d3b2669697fe274fed1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-tempalte"});
