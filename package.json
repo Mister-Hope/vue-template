@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@types/chai": "4.2.8",
-    "@types/mocha": "5.2.7",
+    "@types/mocha": "7.0.1",
     "conventional-changelog-cli": "2.0.31",
     "cz-conventional-changelog": "3.1.0",
     "husky": "4.2.1",
