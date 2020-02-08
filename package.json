@@ -17,7 +17,7 @@
     "lint": "vue-cli-service lint",
     "lint-fix": "vue-cli-service lint",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
-    "commit": "npx git-cz"
+    "commit": "git cz"
   },
   "author": "Mr.Hope",
   "dependencies": {
