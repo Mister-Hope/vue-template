@@ -21,8 +21,8 @@
   },
   "author": "Mr.Hope",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "2.21.0",
-    "@typescript-eslint/parser": "2.21.0",
+    "@typescript-eslint/eslint-plugin": "2.22.0",
+    "@typescript-eslint/parser": "2.22.0",
     "@vue/cli-plugin-babel": "4.2.3",
     "@vue/cli-plugin-e2e-cypress": "4.2.3",
     "@vue/cli-plugin-eslint": "4.2.3",
