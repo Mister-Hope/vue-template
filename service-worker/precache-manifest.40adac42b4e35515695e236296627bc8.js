@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b80965c4782d976d1cfd",
+    "revision": "3cddf3a7dd2e70e1d1ec",
     "url": "/css/about.b68693e2.css"
   },
   {
-    "revision": "542fd06e35d72e90f92d",
+    "revision": "c1be0dc324a95b60394d",
     "url": "/css/app.4e283a5b.css"
   },
   {
@@ -12,20 +12,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/logo.82b9c7a5.png"
   },
   {
-    "revision": "7f410ea8d2c9fd2908a4345214aaf3b0",
+    "revision": "6b738b12b2f3857ed4b841e2974c49aa",
     "url": "/index.html"
   },
   {
-    "revision": "b80965c4782d976d1cfd",
-    "url": "/js/about-legacy.89192275.js"
+    "revision": "3cddf3a7dd2e70e1d1ec",
+    "url": "/js/about-legacy.52c6f42b.js"
   },
   {
-    "revision": "542fd06e35d72e90f92d",
-    "url": "/js/app-legacy.6d1fe5ed.js"
+    "revision": "c1be0dc324a95b60394d",
+    "url": "/js/app-legacy.32ec21b5.js"
   },
   {
-    "revision": "d7605f0a880c20602f0a",
-    "url": "/js/manifest-legacy.959fe0c7.js"
+    "revision": "2b5e25ed2c7cdadf893c",
+    "url": "/js/manifest-legacy.43c362d4.js"
   },
   {
     "revision": "1cf82a8948f8d2704f1461ebadde224f",
