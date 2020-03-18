@@ -15,6 +15,7 @@ jobs:
         token: $Github_Token
         fqdn: vue-demo.mrhope.site
         cleanup: false
+        strategy: git
         project_name: vue-demo
         committer_from_gh: true
         edge: true
