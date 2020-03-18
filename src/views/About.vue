@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-06-13 21:32:08
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-10-18 15:56:14
+ * @LastEditTime: 2020-03-18 13:14:45
  * @Description: 关于页
 -->
 <template>
@@ -14,8 +14,7 @@
     </p>
   </div>
 </template>
-<style>
-a {
-  color: #42b983;
-}
+<style lang="stylus">
+a
+  color #42b983
 </style>

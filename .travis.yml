@@ -1,20 +1,14 @@
-os: linux
 language: node_js
+os: linux
+dist: bionic
 node_js:
   - lts/*
-install:
-  - yarn install
+before_script:
+  - yarn run build
 jobs:
   include:
-    # 测试构建项目
-    - stage: test-build
-      name: "Test Build Process"
-      script: yarn run build
-
-    # 部署 master 分支
     - stage: deploy
       name: "Deploy Demo"
-      script: yarn run build
       deploy:
         provider: pages
         local_dir: dist
@@ -26,7 +20,5 @@ jobs:
         edge: true
 
 stages:
-  - name: test-build
-    if: branch != master
   - name: deploy
     if: branch = master
