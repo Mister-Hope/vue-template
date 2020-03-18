@@ -7,11 +7,9 @@ env:
 extends:
   - eslint:all
   - plugin:vue/recommended
-  # - plugin:prettier/recommended
   - prettier
   - prettier/@typescript-eslint
   - prettier/vue
-  # - "@vue/prettier"
   - "@vue/typescript"
 
 plugins:
@@ -22,10 +20,6 @@ parserOptions:
   parser: "@typescript-eslint/parser"
 
 rules:
-  no-console: "off"
-
-  no-debugger: "off"
-
   arrow-parens:
     - error
     - as-needed
@@ -97,6 +91,12 @@ rules:
   nonblock-statement-body-position:
     - error
     - any
+
+  no-console:
+    - off
+
+  no-debugger:
+    - off
 
   no-inline-comments:
     - off
@@ -182,6 +182,14 @@ rules:
 
 overrides:
   - files:
-      - "**/__tests__/*.{j,t}s?(x)"
+      - "tests/e2e/**"
+    plugins:
+      - "cypress"
+    env:
+      mocha: true
+      "cypress/globals": true
+
+  - files:
+      - "tests/unit/**"
     env:
       mocha: true
