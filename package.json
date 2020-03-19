@@ -30,7 +30,7 @@
     "@vue/test-utils": "1.0.0-beta.32",
     "chai": "4.2.0",
     "core-js": "3.6.4",
-    "register-service-worker": "1.7.0",
+    "register-service-worker": "1.7.1",
     "sass": "1.26.3",
     "sass-loader": "8.0.2",
     "stylus": "0.54.7",
