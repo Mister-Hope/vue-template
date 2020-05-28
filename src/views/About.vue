@@ -1,10 +1,3 @@
-<!--
- * @Author: Mr.Hope
- * @Date: 2019-06-13 21:32:08
- * @LastEditors: Mr.Hope
- * @LastEditTime: 2020-03-18 23:45:43
- * @Description: 关于页
--->
 <template>
   <div class="about">
     <h1>Vue相关文档</h1>

@@ -1,14 +1,8 @@
-/*
- * @Author: Mr.Hope
- * @LastEditors: Mr.Hope
- * @Description: router配置文件
- * @Date: 2019-02-26 23:43:23
- * @LastEditTime: 2019-10-18 15:55:32
- */
+import Vue from "vue";
+import Router, { Route } from "vue-router";
+import routes from "./routes";
 
-import Vue from 'vue';
-import Router from 'vue-router';
-import routes from './routes';
+type Position = { x: number; y: number };
 
 Vue.use(Router); // 使用官方Router
 
@@ -22,7 +16,7 @@ export default new Router({
   routes,
 
   // 使用html5的history API
-  mode: 'history',
+  mode: "history",
 
   // 设置根目录为环境变量BASE_URL
   base: process.env.BASE_URL,
@@ -35,5 +29,10 @@ export default new Router({
    * @param savedPosition 上次保存的滚动位置
    * @returns 返回网页滚动位置
    */
-  scrollBehavior: (_to, _from, savedPosition) => savedPosition || { x: 0, y: 0 }
+  scrollBehavior: (
+    _to: Route,
+    _from: Route,
+    savedPosition: Position | void
+    // eslint-disable-next-line
+  ): Position => savedPosition || { x: 0, y: 0 },
 });

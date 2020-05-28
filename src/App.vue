@@ -1,10 +1,3 @@
-<!--
- * @Author: Mr.Hope
- * @Date: 2019-06-13 21:32:08
- * @LastEditors: Mr.Hope
- * @LastEditTime: 2020-03-18 23:45:52
- * @Description: App主入口
--->
 <template>
   <div id="app">
     <div id="nav">

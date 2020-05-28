@@ -1,19 +1,12 @@
-/**
- * @Author: Mr.Hope
- * @LastEditors: Mr.Hope
- * @Description: Vuex ServiceWorker Module
- * @Date: 2019-03-24 23:50:48
- * @LastEditTime: 2019-03-25 10:10:26
- */
-import { Module } from 'vuex';
-import { BaseState } from '../state';
+import { Module } from "vuex";
+import { BaseState } from "../state";
 
 export interface SWState {
   status: string; // service-worker 状态
-  error?: any;
+  error?: Error;
 }
 
-const swState: SWState = { status: '' };
+const swState: SWState = { status: "" };
 
 const swModule: Module<SWState, BaseState> = {
   state: swState,
@@ -24,7 +17,7 @@ const swModule: Module<SWState, BaseState> = {
      * @param state swState
      * @param status ServiceWorker状态
      */
-    setList(state: SWState, status: string) {
+    setList(state: SWState, status: string): void {
       state.status = status;
     },
 
@@ -34,11 +27,11 @@ const swModule: Module<SWState, BaseState> = {
      * @param state imagestate
      * @param error 遇到的错误
      */
-    index(state: SWState, error: any) {
-      state.status = 'error';
+    index(state: SWState, error: Error): void {
+      state.status = "error";
       state.error = error;
-    }
-  }
+    },
+  },
 };
 
 export default swModule;

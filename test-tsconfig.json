@@ -24,7 +24,7 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noUnusedLocals": false,
+    "noUnusedLocals": true,
     "noUnusedParameters": true,
     "pretty": true,
     "resolveJsonModule": true,
@@ -41,13 +41,7 @@
       "#/*": ["src/components/*"],
       "%/*": ["src/utils/*"]
     },
-    "lib": ["ESNEXT", "DOM", "DOM.Iterable", "ScriptHost"]
+    "lib": ["ESNEXT"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ]
+  "include": ["test/**/*.ts"]
 }
