@@ -35,7 +35,7 @@
     "sass-loader": "8.0.2",
     "stylus": "0.54.7",
     "stylus-loader": "3.0.2",
-    "typescript": "3.9.3",
+    "typescript": "3.9.5",
     "vue": "2.6.11",
     "vue-property-decorator": "8.4.2",
     "vue-router": "3.3.1",
