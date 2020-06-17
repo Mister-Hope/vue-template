@@ -4,7 +4,7 @@ import { BaseState } from "@/store/state";
 
 const registerServiceWorker = (store: Store<BaseState>): void => {
   if (process.env.NODE_ENV === "production")
-    register(`${process.env.BASE_URL}service-worker.js`, {
+    register(`${process.env.BASE_URL || "/"}service-worker.js`, {
       ready() {
         store.commit("swState", "ready");
         console.log("APP已被service worker接管缓存");

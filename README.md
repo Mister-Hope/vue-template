@@ -33,7 +33,7 @@
 
 ### 项目使用库
 
-#### Vue官方库
+#### Vue 官方库
 
 > 跟进使用最新版官方库
 
@@ -47,10 +47,10 @@
 #### 第三方库
 
 - axios (基于 promise 的 html 访问功能)
-  > 在本demo中未使用
+  > 在本 demo 中未使用
 - register-service-worker
 - vue-wechat-title (设置网页标题)
-  > 在本demo中未使用
+  > 在本 demo 中未使用
 
 #### CDN 引入
 
@@ -122,7 +122,7 @@ npm run build
 npm run normal-build
 ```
 
-> 执行构建，将构建成功的网页输出至/dist目录
+> 执行构建，将构建成功的网页输出至/dist 目录
 
 ```bash
 npm run rebuild

@@ -37,21 +37,15 @@ rules:
         - i
         - j
         - k
+        - x
+        - y
 
   indent:
     - off
 
-  function-call-argument-newline:
-    - error
-    - consistent
-
   max-statements:
     - warn
     - 25
-
-  nonblock-statement-body-position:
-    - error
-    - any
 
   no-param-reassign:
     - error
@@ -66,14 +60,6 @@ rules:
 
   object-curly-spacing:
     - off
-
-  one-var:
-    - error
-    - never
-
-  padded-blocks:
-    - error
-    - never
 
   prefer-destructuring:
     - error
@@ -172,6 +158,7 @@ overrides:
       - "**/test/**/*.spec.ts"
       - "**/test/**/*.test.js"
       - "**/test/**/*.test.ts"
+      - "**/__tests__/*.{j,t}s?(x)"
 
     env:
       mocha: true

@@ -34,7 +34,6 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "target": "esnext",
-    "types": ["webpack-env", "mocha", "chai"],
     "paths": {
       "@/*": ["src/*"],
       "|/*": ["src/assets/*"],
@@ -43,5 +42,5 @@
     },
     "lib": ["ESNEXT"]
   },
-  "include": ["test/**/*.ts"]
+  "include": ["tests/**/*.ts"]
 }
