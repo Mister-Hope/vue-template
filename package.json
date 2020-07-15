@@ -26,7 +26,7 @@
     "@vue/cli-plugin-router": "4.4.4",
     "@vue/cli-plugin-typescript": "4.4.4",
     "@vue/cli-plugin-vuex": "4.4.4",
-    "@vue/cli-service": "4.4.4",
+    "@vue/cli-service": "4.4.6",
     "chai": "4.2.0",
     "core-js": "3.6.5",
     "register-service-worker": "1.7.1",
