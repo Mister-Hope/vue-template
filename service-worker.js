@@ -15,10 +15,10 @@ importScripts("/service-worker/workbox-v4.3.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/service-worker/workbox-v4.3.1"});
 
 importScripts(
-  "/service-worker/precache-manifest.11503aa9b33d94ff3b9bbcbb6272b1b7.js"
+  "/service-worker/precache-manifest.c340bbaadd039b756382c10403330e28.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "vue-tempalte"});
+workbox.core.setCacheNameDetails({prefix: "vue-template"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
