@@ -15,7 +15,7 @@ importScripts("/service-worker/workbox-v4.3.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/service-worker/workbox-v4.3.1"});
 
 importScripts(
-  "/service-worker/precache-manifest.c340bbaadd039b756382c10403330e28.js"
+  "/service-worker/precache-manifest.480c61489d5d507c296d4d40b3d7678f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-template"});
