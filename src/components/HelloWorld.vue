@@ -6,7 +6,7 @@
       <br />请访问
       <a href="https://cli.vuejs.org/zh/" rel="noopener" target="_blank">vue-cli 文档</a>.
     </p>
-    <h3>已安装的插件</h3>
+    <h3>已安装的 cli 插件</h3>
     <ul>
       <li>
         <a
@@ -82,7 +82,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class HelloWorld extends Vue {
