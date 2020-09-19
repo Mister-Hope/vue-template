@@ -2,41 +2,81 @@
   "name": "vue-template",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": "Mr.Hope",
   "scripts": {
+    "analyze": "vue-cli-service build --mode analyze --modern",
+    "build": "vue-cli-service build --modern",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
+    "commit": "git cz",
+    "inspect": "vue-cli-service inspect --modern > modern.js",
+    "lint": "vue-cli-service lint --fix && prettier --check --write .",
+    "lint:check": "vue-cli-service lint && prettier --check .",
+    "normal:analyze": "vue-cli-service build --mode analyze",
+    "normal:build": "vue-cli-service build",
+    "normal:inspect": "vue-cli-service inspect > normal.js",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
   },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^3.0.0-0"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0-0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0"
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": "vue-cli-service lint",
+    "*.{js,ts,json,md}": "prettier --write",
+    "package.json": "sort-package-json"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "core-js": "3.6.5",
+    "register-service-worker": "1.7.1",
+    "sort-package-json": "^1.46.0",
+    "typescript": "4.0.3",
+    "vue": "3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@types/chai": "4.2.12",
+    "@types/mocha": "8.0.3",
+    "@typescript-eslint/eslint-plugin": "4.1.1",
+    "@typescript-eslint/parser": "4.1.1",
+    "@vue/cli-plugin-babel": "4.5.6",
+    "@vue/cli-plugin-e2e-cypress": "4.5.6",
+    "@vue/cli-plugin-eslint": "4.5.6",
+    "@vue/cli-plugin-pwa": "4.5.6",
+    "@vue/cli-plugin-typescript": "4.5.6",
+    "@vue/cli-plugin-unit-mocha": "4.5.6",
+    "@vue/cli-service": "4.5.6",
+    "@vue/compiler-sfc": "3.0.0",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "@vue/eslint-config-typescript": "5.1.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "babel-eslint": "10.1.0",
+    "chai": "4.2.0",
+    "conventional-changelog-cli": "2.1.0",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.9.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "husky": "4.3.0",
+    "lint-staged": "10.4.0",
+    "prettier": "2.1.2",
+    "sass": "1.26.11",
+    "sass-loader": "10.0.2",
+    "webpack-bundle-analyzer": "^3.9.0"
+  }
 }
