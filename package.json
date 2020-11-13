@@ -77,6 +77,6 @@
     "sass": "1.27.0",
     "sass-loader": "10.0.3",
     "sort-package-json": "1.46.0",
-    "webpack-bundle-analyzer": "^3.9.0"
+    "webpack-bundle-analyzer": "^4.1.0"
   }
 }
