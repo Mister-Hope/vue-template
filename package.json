@@ -40,7 +40,7 @@
     "not dead"
   ],
   "dependencies": {
-    "core-js": "3.6.5",
+    "core-js": "3.7.0",
     "register-service-worker": "1.7.1",
     "typescript": "4.0.3",
     "vue": "3.0.0",
