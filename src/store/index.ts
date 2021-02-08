@@ -1,12 +1,24 @@
 import { createStore } from "vuex";
-import myMutation from "./mutation";
-import myState from "./state";
-import serviceWorker from "./module/service-worker";
+import { baseState } from "./state";
+import { baseMutation } from "./mutation";
+import { swModule } from "./module";
+
+import type { BaseState } from "./state";
+import type { SWState } from "./module";
+
+export type { BaseState } from "./state";
+export type { SWState } from "./module";
+
+export interface State extends BaseState {
+  sw: SWState;
+}
 
 export default createStore({
-  state: myState,
+  state: baseState,
+
+  mutations: baseMutation,
+
   modules: {
-    serviceWorker,
+    sw: swModule,
   },
-  mutations: myMutation,
 });

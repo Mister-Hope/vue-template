@@ -1,6 +1,6 @@
 import { BaseState } from "./state";
 
-const myMutation = {
+export const baseMutation = {
   /**
    * @description: 设置当前路径
    *
@@ -11,5 +11,3 @@ const myMutation = {
     state.path = path;
   },
 };
-
-export default myMutation;

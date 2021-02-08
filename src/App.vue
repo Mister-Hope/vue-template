@@ -5,8 +5,32 @@
       <RouterLink to="/about">关于</RouterLink>
     </div>
     <RouterView />
+    <SWUpdatePopup />
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import { useRouter } from "vue-router";
+import SWUpdatePopup from "@/service-worker/SWUpdatePopup.vue";
+
+export default defineComponent({
+  name: "App",
+
+  components: {
+    SWUpdatePopup,
+  },
+
+  setup() {
+    const router = useRouter();
+
+    // set title
+    router.afterEach((to) => {
+      if (to.meta.title) document.title = to.meta.title;
+    });
+  },
+});
+</script>
 
 <style lang="scss">
 #app {

@@ -135,30 +135,13 @@ overrides:
         - warn
 
   - files:
-      - "*.d.ts"
-    rules:
-      no-underscore-dangle:
-        - "off"
-
-  - files:
-      - "**/tests/unit/**/*.spec.{j,t}s?(x)"
       - "**/__tests__/*.{j,t}s?(x)"
-
+      - "**/tests/unit/**/*.spec.{j,t}s?(x)"
     env:
-      mocha: true
-
-  - files:
-      - "**/test/**/*.spec.ts"
-      - "**/test/**/*.test.ts"
+      jest: true
 
     rules:
       "@typescript-eslint/no-explicit-any":
         - off
       "@typescript-eslint/no-unsafe-member-access":
         - off
-
-  - files:
-      - "**/__tests__/*.{j,t}s?(x)"
-      - "**/tests/unit/**/*.spec.{j,t}s?(x)"
-    env:
-      jest: true
