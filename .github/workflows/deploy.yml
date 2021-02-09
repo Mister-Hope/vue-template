@@ -14,7 +14,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v2.1.4
         id: node-modules
         with:
           path: node_modules/
@@ -36,8 +36,7 @@ jobs:
         run: yarn run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist
+          branch: gh-pages
+          folder: dist
