@@ -1,7 +1,13 @@
 {
-  "name": "vue",
+  "name": "vue-template",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Mr.Hope",
+    "email": "zhangbowang1998@gmail.com",
+    "url": "https://mrhope.site"
+  },
   "scripts": {
     "analyze": "vue-cli-service build --mode analyze --modern",
     "build": "vue-cli-service build --modern",
