@@ -3,51 +3,84 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
+    "analyze": "vue-cli-service build --mode analyze --modern",
+    "build": "vue-cli-service build --modern",
+    "build:debug": "vue-cli-service build --mode debug --modern",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
+    "commit": "git cz",
+    "inspect": "vue-cli-service inspect --modern > modern.js",
+    "postinstall": "husky install",
     "lint": "vue-cli-service lint --fix && prettier --check --write .",
-    "lint:check": "vue-cli-service lint && prettier --check ."
-  },
-  "dependencies": {
-    "core-js": "^3.9.0",
-    "register-service-worker": "^1.7.2",
-    "vue": "^3.0.4",
-    "vue-router": "^4.0.1",
-    "vuex": "^4.0.0-0"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.20",
-    "@typescript-eslint/eslint-plugin": "^4.15.1",
-    "@typescript-eslint/parser": "^4.15.1",
-    "@vue/cli-plugin-babel": "~5.0.0-alpha.4",
-    "@vue/cli-plugin-e2e-cypress": "~5.0.0-alpha.4",
-    "@vue/cli-plugin-eslint": "~5.0.0-alpha.4",
-    "@vue/cli-plugin-pwa": "~5.0.0-alpha.4",
-    "@vue/cli-plugin-router": "~5.0.0-alpha.4",
-    "@vue/cli-plugin-typescript": "~5.0.0-alpha.4",
-    "@vue/cli-plugin-unit-jest": "~5.0.0-alpha.4",
-    "@vue/cli-plugin-vuex": "~5.0.0-alpha.4",
-    "@vue/cli-service": "~5.0.0-alpha.4",
-    "@vue/compiler-sfc": "^3.0.5",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-typescript": "^7.0.0",
-    "@vue/test-utils": "^2.0.0-0",
-    "eslint": "^7.20.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^7.6.0",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1",
-    "sass": "^1.32.8",
-    "sass-loader": "^11.0.1",
-    "typescript": "~4.1.5",
-    "vue-jest": "^5.0.0-0"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+    "lint:check": "vue-cli-service lint && prettier --check .",
+    "normal:analyze": "vue-cli-service build --mode analyze",
+    "normal:build": "vue-cli-service build",
+    "normal:inspect": "vue-cli-service inspect > normal.js",
+    "package:check-update": "ncu",
+    "package:update": "ncu -u && yarn && yarn upgrade",
+    "serve": "vue-cli-service serve",
+    "serve:debug": "vue-cli-service serve --mode debug",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
   },
   "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": "vue-cli-service lint"
+    "*.{js,jsx,vue,ts,tsx}": [
+      "vue-cli-service lint",
+      "eslint --fix"
+    ],
+    "*.{js,ts,json,md}": "prettier --write",
+    "package.json": "sort-package-json"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "core-js": "3.9.0",
+    "mitt": "2.1.0",
+    "register-service-worker": "1.7.2",
+    "vconsole": "3.4.0",
+    "vue": "3.0.5",
+    "vue-router": "4.0.3",
+    "vuex": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.20",
+    "@typescript-eslint/eslint-plugin": "4.15.1",
+    "@typescript-eslint/parser": "4.15.1",
+    "@vue/cli-plugin-babel": "5.0.0-alpha.4",
+    "@vue/cli-plugin-e2e-cypress": "5.0.0-alpha.4",
+    "@vue/cli-plugin-eslint": "5.0.0-alpha.4",
+    "@vue/cli-plugin-pwa": "5.0.0-alpha.4",
+    "@vue/cli-plugin-router": "5.0.0-alpha.4",
+    "@vue/cli-plugin-typescript": "5.0.0-alpha.4",
+    "@vue/cli-plugin-unit-jest": "5.0.0-alpha.4",
+    "@vue/cli-plugin-vuex": "5.0.0-alpha.4",
+    "@vue/cli-service": "5.0.0-alpha.4",
+    "@vue/compiler-sfc": "3.0.5",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "@vue/eslint-config-typescript": "7.0.0",
+    "@vue/test-utils": "2.0.0-rc.1",
+    "conventional-changelog-cli": "2.1.1",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.20.0",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-vue": "7.6.0",
+    "husky": "5.0.9",
+    "lint-staged": "10.5.4",
+    "npm-check-updates": "11.1.4",
+    "prettier": "2.2.1",
+    "sass": "1.32.7",
+    "sass-loader": "11.0.1",
+    "sort-package-json": "1.48.1",
+    "typescript": "4.1.5",
+    "vue-jest": "5.0.0-alpha.8",
+    "webpack-bundle-analyzer": "4.4.0"
   }
 }

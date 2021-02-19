@@ -2,13 +2,13 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
+      如果需要一份指南，或想要了解如何编写 / 自定义这个APP
+      <br />请访问
+      <a href="https://cli.vuejs.org/zh/" rel="noopener" target="_blank"
+        >vue-cli 文档</a
       >.
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <h3>已安装的 cli 插件</h3>
     <ul>
       <li>
         <a
@@ -20,10 +20,10 @@
       </li>
       <li>
         <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa"
-          target="_blank"
+          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript"
           rel="noopener"
-          >pwa</a
+          target="_blank"
+          >typescript</a
         >
       </li>
       <li>
@@ -52,42 +52,47 @@
       </li>
       <li>
         <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-unit-jest"
-          target="_blank"
+          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa"
           rel="noopener"
+          target="_blank"
+          >pwa</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-unit-jest"
+          rel="noopener"
+          target="_blank"
           >unit-jest</a
         >
       </li>
       <li>
         <a
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-e2e-cypress"
-          target="_blank"
           rel="noopener"
+          target="_blank"
           >e2e-cypress</a
+        >
+      </li>
+    </ul>
+    <h3>其他链接</h3>
+    <ul>
+      <li>
+        <a href="https://v3.vuejs.org/zh/" rel="noopener" target="_blank"
+          >核心文档</a
         >
       </li>
       <li>
         <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript"
-          target="_blank"
+          href="https://forum.vuejs.org/c/chinese"
           rel="noopener"
-          >typescript</a
-        >
-      </li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li>
-        <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-          >Forum</a
+          target="_blank"
+          >论坛</a
         >
       </li>
       <li>
         <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
+          >社交聊天</a
         >
       </li>
       <li>
@@ -96,37 +101,42 @@
         >
       </li>
       <li>
-        <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
+        <a href="https://news.vuejs.org" rel="noopener" target="_blank">新闻</a>
       </li>
     </ul>
-    <h3>Ecosystem</h3>
+    <h3>生态系统</h3>
     <ul>
       <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
+        <a href="https://router.vuejs.org/zh/" rel="noopener" target="_blank"
           >vue-router</a
         >
       </li>
       <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
+        <a href="https://vuex.vuejs.org/zh/" rel="noopener" target="_blank"
+          >vuex</a
+        >
       </li>
       <li>
         <a
           href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
           rel="noopener"
+          target="_blank"
           >vue-devtools</a
         >
       </li>
       <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
+        <a
+          href="https://vue-loader.vuejs.org/zh/"
+          rel="noopener"
+          target="_blank"
           >vue-loader</a
         >
       </li>
       <li>
         <a
           href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
           rel="noopener"
+          target="_blank"
           >awesome-vue</a
         >
       </li>

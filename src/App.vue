@@ -1,10 +1,36 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="app">
+    <div id="nav">
+      <RouterLink to="/">主页</RouterLink> |
+      <RouterLink to="/about">关于</RouterLink>
+    </div>
+    <RouterView />
+    <SWUpdatePopup />
   </div>
-  <router-view />
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import { useRouter } from "vue-router";
+import SWUpdatePopup from "@/service-worker/SWUpdatePopup.vue";
+
+export default defineComponent({
+  name: "App",
+
+  components: {
+    SWUpdatePopup,
+  },
+
+  setup() {
+    const router = useRouter();
+
+    // set title
+    router.afterEach((to) => {
+      if (to.meta.title) document.title = to.meta.title;
+    });
+  },
+});
+</script>
 
 <style lang="scss">
 #app {
