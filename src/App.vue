@@ -26,7 +26,7 @@ export default defineComponent({
 
     // set title
     router.afterEach((to) => {
-      if (to.meta.title) document.title = to.meta.title;
+      if (to.meta.title) document.title = to.meta.title as string;
     });
   },
 });
