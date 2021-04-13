@@ -19,7 +19,7 @@ jobs:
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - uses: actions/cache@v2.1.4
+      - uses: actions/cache@v2.1.5
         id: node-modules
         with:
           path: node_modules/
