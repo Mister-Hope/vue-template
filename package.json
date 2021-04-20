@@ -47,7 +47,7 @@
     "not dead"
   ],
   "dependencies": {
-    "core-js": "3.10.0",
+    "core-js": "3.10.2",
     "mitt": "2.1.0",
     "register-service-worker": "1.7.2",
     "vconsole": "3.4.0",
