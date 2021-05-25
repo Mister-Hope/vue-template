@@ -2020,12 +2020,12 @@
     webpack "^5.22.0"
     yorkie "^2.0.0"
 
-"@vue/cli-plugin-pwa@5.0.0-beta.0":
-  version "5.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-5.0.0-beta.0.tgz#bf5dbb37ae00dcb727b2e3ccc9dd19ea6af624f2"
-  integrity sha512-cF1ilB7XhkxM2BbzmowUmHhrbCZodiQRzz0iSOPF5K1BTfnfbVJlaC+3Wid3tblwB8ZwcH//Mmrz82elXAQ9+A==
+"@vue/cli-plugin-pwa@5.0.0-beta.1":
+  version "5.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-5.0.0-beta.1.tgz#546cc5d734d11f79c989cf2c2c040c0faf1fda28"
+  integrity sha512-OLZEcCPv/RC9TqPqGdh0wR+njtzavJ7FjDddHXqQoUn/5k9uE06EIKvU8C9rwaM49o1PJFBwi/lAweS0p4F82g==
   dependencies:
-    "@vue/cli-shared-utils" "^5.0.0-beta.0"
+    "@vue/cli-shared-utils" "^5.0.0-beta.1"
     html-webpack-plugin "^5.1.0"
     webpack "^5.22.0"
     workbox-webpack-plugin "^6.1.0"
@@ -8406,7 +8406,6 @@ minipass-fetch@^1.3.0, minipass-fetch@^1.3.2:
   resolved "https://registry.yarnpkg.com/minipass-fetch/-/minipass-fetch-1.3.3.tgz#34c7cea038c817a8658461bf35174551dce17a0a"
   integrity sha512-akCrLDWfbdAWkMLBxJEeWTdNsjML+dt5YgOI4gJ53vuO0vrmYQkUPxa6j6V65s9CcePIr2SSWqjT2EcrNseryQ==
   dependencies:
-    encoding "^0.1.12"
     minipass "^3.1.0"
     minipass-sized "^1.0.3"
     minizlib "^2.0.0"
