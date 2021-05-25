@@ -1999,12 +1999,12 @@
     thread-loader "^3.0.0"
     webpack "^5.22.0"
 
-"@vue/cli-plugin-e2e-cypress@5.0.0-beta.0":
-  version "5.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-e2e-cypress/-/cli-plugin-e2e-cypress-5.0.0-beta.0.tgz#2398f03fc624d53fe7ce6b07d200f4f1dbe3c954"
-  integrity sha512-7CvaP7SSoqtQYbKTIt/0ye2q1rl/Erqo8LoWupET6VVK0lQKPZ1zMSb6f63MWL7WXxDG3w+JaL3P8sUGfY/XEw==
+"@vue/cli-plugin-e2e-cypress@5.0.0-beta.1":
+  version "5.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-e2e-cypress/-/cli-plugin-e2e-cypress-5.0.0-beta.1.tgz#1a16d185e742a7be998f62ba8d4a500b1435867f"
+  integrity sha512-FiFrFffHJZ4ebj429y8UlqjXJBB1erAd3n8DM3ULFSsHbuo6RHJi+yWvZBofmfAaASIY7rTUesQp/bJ//e42Cw==
   dependencies:
-    "@vue/cli-shared-utils" "^5.0.0-beta.0"
+    "@vue/cli-shared-utils" "^5.0.0-beta.1"
     cypress "^7.1.0"
     eslint-plugin-cypress "^2.11.2"
 
@@ -8406,7 +8406,6 @@ minipass-fetch@^1.3.0, minipass-fetch@^1.3.2:
   resolved "https://registry.yarnpkg.com/minipass-fetch/-/minipass-fetch-1.3.3.tgz#34c7cea038c817a8658461bf35174551dce17a0a"
   integrity sha512-akCrLDWfbdAWkMLBxJEeWTdNsjML+dt5YgOI4gJ53vuO0vrmYQkUPxa6j6V65s9CcePIr2SSWqjT2EcrNseryQ==
   dependencies:
-    encoding "^0.1.12"
     minipass "^3.1.0"
     minipass-sized "^1.0.3"
     minizlib "^2.0.0"
