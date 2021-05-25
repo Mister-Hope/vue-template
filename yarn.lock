@@ -1982,7 +1982,7 @@
     "@vue/babel-plugin-transform-vue-jsx" "^1.2.1"
     camelcase "^5.0.0"
 
-"@vue/cli-overlay@^5.0.0-beta.0":
+"@vue/cli-overlay@^5.0.0-beta.1":
   version "5.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/@vue/cli-overlay/-/cli-overlay-5.0.0-beta.1.tgz#1b27fec570246e9a7123bb372720e2e6a458f1c8"
   integrity sha512-8hLXlpL9f5MjrLwbYpwQw1RsqzDD+KaQ3WqH6wRlUO2kXK2jSboW7hVqXrKnhX9vhc+9KCa/+W/LHKlyBnKYOw==
@@ -2037,7 +2037,7 @@
   dependencies:
     "@vue/cli-shared-utils" "^5.0.0-beta.0"
 
-"@vue/cli-plugin-router@^5.0.0-beta.0":
+"@vue/cli-plugin-router@^5.0.0-beta.1":
   version "5.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-router/-/cli-plugin-router-5.0.0-beta.1.tgz#300565ce4169298509a9bdfbf399330202419528"
   integrity sha512-Dty7hYXypGpFHKV1Lr8mZPZjLPZ44czEaSuQYovtCpGEpoarO+E7Q0+xjXd6y/dnxZu1QqyNoqeYtbkCD2zF2Q==
@@ -2081,25 +2081,25 @@
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-vuex/-/cli-plugin-vuex-5.0.0-beta.0.tgz#beb45e126c88bbb83631ff93109502439f53ff94"
   integrity sha512-sZMrVsvn+dDUQwSuWUebpwlH0QwC8hUqr8w342jrIb9A596cVo88g/vzakqR+a4Aoo+eeHNZ5ZOOzi1wieuClA==
 
-"@vue/cli-plugin-vuex@^5.0.0-beta.0":
+"@vue/cli-plugin-vuex@^5.0.0-beta.1":
   version "5.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-vuex/-/cli-plugin-vuex-5.0.0-beta.1.tgz#807d4e625a95fec6926b071698b980d0e36b1448"
   integrity sha512-0lbC/+5vn6XzzHFbV6H0Hy0m34IT3CgeO2vQjwF7QVr9mtxWO8u3R1JZ810E58r0pRQycpMg2xtnwZ/Ia14XVQ==
 
-"@vue/cli-service@5.0.0-beta.0":
-  version "5.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-5.0.0-beta.0.tgz#b31700c130b27168541cb0fe57a754230689ccf8"
-  integrity sha512-Mgu5lOq82HReF6izrcNoTbfTf2FjldSW6t7gkreoaDbo7tdliRrMo7Bz1sUnLWAj/uQSv3NzMwXt6BjVZszjHg==
+"@vue/cli-service@5.0.0-beta.1":
+  version "5.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-5.0.0-beta.1.tgz#7ef6b417e99025eb8e5725c9880ce68d87c6c21a"
+  integrity sha512-SkSWlsf7E3nQALDeS4QuX37RdOeGbO+mm2yBJ+R07X2lzR2EYTRO249EcctEFTOt3aalEOEWfnrc8EjPXp7tgg==
   dependencies:
     "@babel/helper-compilation-targets" "^7.12.16"
     "@soda/friendly-errors-webpack-plugin" "^1.8.0"
     "@soda/get-current-script" "^1.0.2"
     "@types/minimist" "^1.2.0"
     "@types/webpack-dev-server" "^3.11.0"
-    "@vue/cli-overlay" "^5.0.0-beta.0"
-    "@vue/cli-plugin-router" "^5.0.0-beta.0"
-    "@vue/cli-plugin-vuex" "^5.0.0-beta.0"
-    "@vue/cli-shared-utils" "^5.0.0-beta.0"
+    "@vue/cli-overlay" "^5.0.0-beta.1"
+    "@vue/cli-plugin-router" "^5.0.0-beta.1"
+    "@vue/cli-plugin-vuex" "^5.0.0-beta.1"
+    "@vue/cli-shared-utils" "^5.0.0-beta.1"
     "@vue/component-compiler-utils" "^3.1.2"
     "@vue/web-component-wrapper" "^1.3.0"
     acorn "^8.0.5"
@@ -4400,14 +4400,7 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
-  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
-  dependencies:
-    ms "2.1.2"
-
-debug@4.3.2:
+debug@4, debug@4.3.2, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
   integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
@@ -8406,7 +8399,6 @@ minipass-fetch@^1.3.0, minipass-fetch@^1.3.2:
   resolved "https://registry.yarnpkg.com/minipass-fetch/-/minipass-fetch-1.3.3.tgz#34c7cea038c817a8658461bf35174551dce17a0a"
   integrity sha512-akCrLDWfbdAWkMLBxJEeWTdNsjML+dt5YgOI4gJ53vuO0vrmYQkUPxa6j6V65s9CcePIr2SSWqjT2EcrNseryQ==
   dependencies:
-    encoding "^0.1.12"
     minipass "^3.1.0"
     minipass-sized "^1.0.3"
     minizlib "^2.0.0"
