@@ -50,7 +50,7 @@
     "core-js": "3.13.0",
     "mitt": "2.1.0",
     "register-service-worker": "1.7.2",
-    "vconsole": "3.6.1",
+    "vconsole": "3.7.0",
     "vue": "3.0.11",
     "vue-router": "4.0.8",
     "vuex": "4.0.1"
