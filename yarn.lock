@@ -2025,12 +2025,12 @@
     webpack "^5.22.0"
     yorkie "^2.0.0"
 
-"@vue/cli-plugin-pwa@5.0.0-beta.1":
-  version "5.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-5.0.0-beta.1.tgz#546cc5d734d11f79c989cf2c2c040c0faf1fda28"
-  integrity sha512-OLZEcCPv/RC9TqPqGdh0wR+njtzavJ7FjDddHXqQoUn/5k9uE06EIKvU8C9rwaM49o1PJFBwi/lAweS0p4F82g==
+"@vue/cli-plugin-pwa@5.0.0-beta.2":
+  version "5.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-5.0.0-beta.2.tgz#63f1be6e336da1e0a96f8d16cfbd6b35b5d2895c"
+  integrity sha512-H1+vxsBi4dr9hl/4oE93lqRTg4nUscFU9+JHEEpjKfQcrdauu3aT4IG3+AEtqDJ+cJOYrttLWlWjUkCn3492WA==
   dependencies:
-    "@vue/cli-shared-utils" "^5.0.0-beta.1"
+    "@vue/cli-shared-utils" "^5.0.0-beta.2"
     html-webpack-plugin "^5.1.0"
     webpack "^5.22.0"
     workbox-webpack-plugin "^6.1.0"
@@ -2143,10 +2143,10 @@
     webpack-merge "^5.7.3"
     webpack-virtual-modules "^0.4.2"
 
-"@vue/cli-shared-utils@^5.0.0-beta.1":
-  version "5.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-5.0.0-beta.1.tgz#5bea6b1d403da74c75af8060625b9ce0e873dfba"
-  integrity sha512-p8NnRooQu19C/fFuIXzfDLX89HMqkeFdRg0HB8NX9u/qa14WZ3WO1JcpwnN87iRNuJddNhQ16UMxiMtJigpRzQ==
+"@vue/cli-shared-utils@^5.0.0-beta.1", "@vue/cli-shared-utils@^5.0.0-beta.2":
+  version "5.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-5.0.0-beta.2.tgz#b7bad21e3b13b5dbb985c07bef14dcbd669d90da"
+  integrity sha512-gYznhuPIsSpX6M0LE6GTOsy/V9xG0qEZoBw9bSCC5/eEg+JOwoBXqDdqOXrTPEc6oc0zjPM3lk9zlwsJQ4cUcg==
   dependencies:
     chalk "^4.1.0"
     execa "^1.0.0"
