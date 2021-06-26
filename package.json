@@ -52,7 +52,7 @@
     "register-service-worker": "1.7.2",
     "vconsole": "3.8.1",
     "vue": "3.1.2",
-    "vue-router": "4.0.8",
+    "vue-router": "4.0.10",
     "vuex": "4.0.1"
   },
   "devDependencies": {
