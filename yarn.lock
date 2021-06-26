@@ -2071,14 +2071,14 @@
   dependencies:
     "@vue/cli-shared-utils" "^5.0.0-beta.2"
 
-"@vue/cli-plugin-typescript@5.0.0-beta.1":
-  version "5.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-5.0.0-beta.1.tgz#20435c9016512928d0d00f3e17a81c824ea54375"
-  integrity sha512-FwXtmVf0aY3FVoQzYf2hEmeBWZAONQ22f8GomFWtY31+xXYR3iShfs8fERR5pypeX/aTYbrcvYyf+yzs7H4xTA==
+"@vue/cli-plugin-typescript@5.0.0-beta.2":
+  version "5.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-5.0.0-beta.2.tgz#d2b1c0afd3e319f2d1698675dccf77e11454b807"
+  integrity sha512-oOqLrW0AJIqwszzLkide/FP77IQqiUetO42ShweJKNWPq77JEnbvSUIiQ49QVHqO5ETCZLRyl7aJWJfKUlygTQ==
   dependencies:
     "@babel/core" "^7.12.16"
     "@types/webpack-env" "^1.15.2"
-    "@vue/cli-shared-utils" "^5.0.0-beta.1"
+    "@vue/cli-shared-utils" "^5.0.0-beta.2"
     babel-loader "^8.2.2"
     cache-loader "^4.1.0"
     fork-ts-checker-webpack-plugin "^6.1.0"
@@ -8311,7 +8311,6 @@ minipass-fetch@^1.3.0, minipass-fetch@^1.3.2:
   resolved "https://registry.yarnpkg.com/minipass-fetch/-/minipass-fetch-1.3.3.tgz#34c7cea038c817a8658461bf35174551dce17a0a"
   integrity sha512-akCrLDWfbdAWkMLBxJEeWTdNsjML+dt5YgOI4gJ53vuO0vrmYQkUPxa6j6V65s9CcePIr2SSWqjT2EcrNseryQ==
   dependencies:
-    encoding "^0.1.12"
     minipass "^3.1.0"
     minipass-sized "^1.0.3"
     minizlib "^2.0.0"
